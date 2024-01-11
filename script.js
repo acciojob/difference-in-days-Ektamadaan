@@ -4,7 +4,7 @@ var dateDiffInDays = function (date1, date2) {
 	const parsedate2 = new Date(date2);
 
 	const diffinsec = Math.abs(parsedate1 - parsedate2);
-	const diffindays = Math.round(diffinsec/60*60*24);
+	const diffindays = Math.round(diffinsec/(1000*60*60*24));
 
 	return diffindays;
 	
